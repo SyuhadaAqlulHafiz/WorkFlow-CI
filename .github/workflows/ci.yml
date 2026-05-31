@@ -9,58 +9,54 @@ on:
       - main
 
 env:
-  CSV_URL: "MLproject/JobDataset_preprocessing/job_dataset_preprocessed.csv"
+  # Perbaikan case-sensitivity folder: MLProject (P kapital)
+  CSV_URL: "MLProject/JobDataset_preprocessing/job_dataset_preprocessed.csv"
   MLFLOW_TRACKING_URI: "file://${{ github.workspace }}/mlruns"
-  EXPERIMENT_NAME: "Job_Salary_Classification_Local"
+  MLFLOW_EXPERIMENT_NAME: "Job_Salary_Classification_Local"
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-      # 1. Set up job (Otomatis diinisialisasi oleh GitHub Runner)
-
-      # 2. Run actions/checkout@v3
-      # Menggunakan v3 sesuai dengan visualisasi log langkah kerja pada gambar 3
+      # 1. Run actions/checkout@v3
       - name: Run actions/checkout@v3
         uses: actions/checkout@v3
 
-      # 3. Set up Python 3.12.7
-      # Menggunakan Python 3.12.7 sesuai instruksi visual log gambar 3
+      # 2. Set up Python 3.12.7
       - name: Set up Python 3.12.7
         uses: actions/setup-python@v4
         with:
           python-version: "3.12.7"
 
-      # 4. Check Env
+      # 3. Check Env
       - name: Check Env
         run: |
           echo "Data path URL: $CSV_URL"
           echo "Tracking URI: $MLFLOW_TRACKING_URI"
 
-      # 5. Install dependencies
+      # 4. Install dependencies (Termasuk conda jika mlflow run membutuhkannya, atau pasang via pip)
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install mlflow pandas scikit-learn numpy matplotlib seaborn
 
-      # 6. Run mlflow project
-      # Mengarah ke folder MLProject sesuai nama folder pada gambar 1
+      # 5. Run mlflow project
+      # Menghapus 'conda activate' manual karena mlflow run otomatis mengisolasi env berdasarkan conda.yaml
       - name: Run MLflow Project
-        shell: bash -l {0}
         working-directory: MLProject
         run: |
-          conda activate mlflow-env
-          mlflow run . --experiment-name "${{ env.EXPERIMENT_NAME }}"
-          
-      # 7. Get latest MLflow run_id
+          mlflow run . --param-list data_path="JobDataset_preprocessing/job_dataset_preprocessed.csv"
+
+      # 6. Get latest MLflow run_id
       - name: Get latest MLflow run_id
         run: |
           RUN_ID=$(python - <<'PY'
           import mlflow
+          import os
 
-          mlflow.set_tracking_uri("${{ env.MLFLOW_TRACKING_URI }}")
-          experiment = mlflow.get_experiment_by_name("${{ env.EXPERIMENT_NAME }}")
+          mlflow.set_tracking_uri(os.environ["MLFLOW_TRACKING_URI"])
+          experiment = mlflow.get_experiment_by_name(os.environ["MLFLOW_EXPERIMENT_NAME"])
           if experiment is None:
               raise SystemExit("Experiment not found")
 
@@ -78,29 +74,23 @@ jobs:
           echo "RUN_ID=$RUN_ID" >> $GITHUB_ENV
           echo "Latest run_id: $RUN_ID"
 
-      # 8. Install Python dependencies
-      - name: Install Python dependencies
-        run: |
-          pip install mlflow
-
-      # 9. Upload to GitHub (Metode penyimpanan repositori yang sama sesuai petunjuk Gambar 3)
+      # 7. Upload to GitHub
       - name: Upload to GitHub
         run: |
           git config --global user.name "${{ github.actor }}"
           git config --global user.email "${{ github.actor }}@users.noreply.github.com"
           
-          # Memastikan file pelacakan mlruns ikut terunggah
           git add mlruns/ || echo "No mlruns directory found"
           git commit -m "Add MLflow execution artifacts from CI pipeline [skip ci]" || echo "No changes to commit"
           git push origin main || echo "No changes to push"
 
-      # 10. Build Docker Model
-      # Menggunakan mlflow models build-docker untuk membuat citra docker aplikasi prediction Anda
+      # 8. Build Docker Model
+      # Memastikan pencarian path experiment id disesuaikan (default: 0 atau id dinamis dari MLflow)
       - name: Build Docker Model
         run: |
-          mlflow models build-docker --model-uri "file://${{ github.workspace }}/mlruns/0/$RUN_ID/artifacts/model" --name "salary-prediction-model"
+          mlflow models build-docker --model-uri "mlruns/0/$RUN_ID/artifacts/model" --name "salary-prediction-model"
 
-      # 11. Log in to Docker Hub
+      # 9. Log in to Docker Hub
       - name: Log in to Docker Hub
         uses: docker/login-action@v2
         with:
@@ -108,17 +98,12 @@ jobs:
           password: ${{ secrets.DOCKER_HUB_ACCESS_TOKEN }}
           logout: true
 
-      # 12. Tag Docker Image
+      # 10. Tag Docker Image
       - name: Tag Docker Image
         run: |
           docker tag salary-prediction-model ${{ secrets.DOCKER_HUB_USERNAME }}/salary-prediction-model:latest
 
-      # 13. Push Docker Image
+      # 11. Push Docker Image
       - name: Push Docker Image
         run: |
           docker push ${{ secrets.DOCKER_HUB_USERNAME }}/salary-prediction-model:latest
-
-      # 14. Post Log in to Docker Hub (Otomatis dijalankan oleh GitHub Actions)
-      # 15. Post Set up Python 3.12.7 (Otomatis dijalankan oleh GitHub Actions)
-      # 16. Post Run actions/checkout@v3 (Otomatis dijalankan oleh GitHub Actions)
-      # 17. Complete job (Otomatis dijalankan oleh GitHub Actions)
