@@ -231,13 +231,6 @@ from sklearn.metrics import accuracy_score, f1_score, precision_score, recall_sc
 from sklearn.utils import estimator_html_repr
 
 def main(data_path):
-    # === 1. Inisialisasi Autolog & Tracking URI ===
-    # Mengarahkan tracking ke server lokal yang berjalan di port 5000
-    mlflow.set_tracking_uri("http://127.0.0.1:5000/")
-    
-    # Set nama eksperimen di server lokal
-    mlflow.set_experiment("Job_Salary_Classification_Local")
-    
     # Otomatis mencatat params, metrics bawaan, input_example, dan folder 'model' saat .fit() dipanggil
     mlflow.autolog(log_input_examples=True, log_model_signatures=True)
 
