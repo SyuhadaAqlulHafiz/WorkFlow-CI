@@ -104,8 +104,5 @@ if __name__ == "__main__":
     # Fallback jika dijalankan manual tanpa argumen (tombol play/run VS Code), mengarah ke file lokal
     if args.data_path is None:
         args.data_path = os.path.join("JobDataset_preprocessing", "job_dataset_preprocessed.csv")
-        # Jika dijalankan lokal di luar folder MLProject, sesuaikan dengan mendaftarkan URI lokal server Anda:
-        mlflow.set_tracking_uri("http://127.0.0.1:5000/")
-        mlflow.set_experiment("Job_Salary_Classification_Local")
 
     main(args.data_path)
