@@ -432,5 +432,5 @@ schema: '{"mlflow_colspec": [{"type": "double", "name": "rating", "required": tr
   "name": "jobType/0_Full-time", "required": true}, {"type": "boolean", "name": "jobType/1_Contract",
   "required": true}]}'
 source: '{"tags": {"mlflow.user": "runner", "mlflow.source.name": "modelling.py",
-  "mlflow.source.type": "LOCAL", "mlflow.source.git.commit": "c739b7099f1226304ca1fa2e99289e0f3d139474"}}'
+  "mlflow.source.type": "LOCAL", "mlflow.source.git.commit": "7e2f010001d777b19b83185a70ca93803cae91ed"}}'
 source_type: code
