@@ -1,0 +1,15 @@
+artifact_uri: file:///home/runner/work/WorkFlow-CI/WorkFlow-CI/mlruns/182151875066184860/9aaaeac1279c4f5588b3862c8bed87ea/artifacts
+end_time: 1780231263892
+entry_point_name: ''
+experiment_id: '182151875066184860'
+lifecycle_stage: active
+run_id: 9aaaeac1279c4f5588b3862c8bed87ea
+run_name: chill-stag-17
+run_uuid: 9aaaeac1279c4f5588b3862c8bed87ea
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780231254919
+status: 3
+tags: []
+user_id: runner
