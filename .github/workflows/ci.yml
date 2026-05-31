@@ -46,10 +46,13 @@ jobs:
 
       # 6. Run mlflow project
       # Mengarah ke folder MLProject sesuai nama folder pada gambar 1
-      - name: Run mlflow project
+      - name: Run MLflow Project
+        shell: bash -l {0}
+        working-directory: MLProject
         run: |
-          mlflow run ${{ github.workspace }}/MLproject --env-manager=local --experiment-name "${{ env.EXPERIMENT_NAME }}"
-
+          conda activate mlflow-env
+          mlflow run . --experiment-name "${{ env.EXPERIMENT_NAME }}"
+          
       # 7. Get latest MLflow run_id
       - name: Get latest MLflow run_id
         run: |
