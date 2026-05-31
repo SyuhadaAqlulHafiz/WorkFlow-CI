@@ -1,0 +1,436 @@
+digest: 57b73b2b
+name: dataset
+profile: '{"num_rows": 44, "num_elements": 18612}'
+schema: '{"mlflow_colspec": [{"type": "double", "name": "rating", "required": true},
+  {"type": "double", "name": "desc_len", "required": true}, {"type": "double", "name":
+  "posname_len", "required": true}, {"type": "boolean", "name": "company_A Place For
+  Mom", "required": true}, {"type": "boolean", "name": "company_ADP", "required":
+  true}, {"type": "boolean", "name": "company_AT&T", "required": true}, {"type": "boolean",
+  "name": "company_Airbnb", "required": true}, {"type": "boolean", "name": "company_Allstate",
+  "required": true}, {"type": "boolean", "name": "company_American Express Global
+  Business Travel", "required": true}, {"type": "boolean", "name": "company_Amex",
+  "required": true}, {"type": "boolean", "name": "company_Apple", "required": true},
+  {"type": "boolean", "name": "company_Arity", "required": true}, {"type": "boolean",
+  "name": "company_AstraZeneca", "required": true}, {"type": "boolean", "name": "company_AtkinsR\u00e9alis",
+  "required": true}, {"type": "boolean", "name": "company_Atlassian", "required":
+  true}, {"type": "boolean", "name": "company_BAXTER", "required": true}, {"type":
+  "boolean", "name": "company_BMW", "required": true}, {"type": "boolean", "name":
+  "company_BOEING", "required": true}, {"type": "boolean", "name": "company_Booz Allen",
+  "required": true}, {"type": "boolean", "name": "company_Bosch Group", "required":
+  true}, {"type": "boolean", "name": "company_Boston Scientific Corporation", "required":
+  true}, {"type": "boolean", "name": "company_Bristol-Myers Squibb", "required": true},
+  {"type": "boolean", "name": "company_CACI", "required": true}, {"type": "boolean",
+  "name": "company_CGI Group, Inc.", "required": true}, {"type": "boolean", "name":
+  "company_Capgemini", "required": true}, {"type": "boolean", "name": "company_Charles
+  Schwab", "required": true}, {"type": "boolean", "name": "company_Citi", "required":
+  true}, {"type": "boolean", "name": "company_Citigroup", "required": true}, {"type":
+  "boolean", "name": "company_Cognizant", "required": true}, {"type": "boolean", "name":
+  "company_Collins Aerospace", "required": true}, {"type": "boolean", "name": "company_Concord
+  USA", "required": true}, {"type": "boolean", "name": "company_CrowdStrike", "required":
+  true}, {"type": "boolean", "name": "company_DataAnnotation", "required": true},
+  {"type": "boolean", "name": "company_Deloitte", "required": true}, {"type": "boolean",
+  "name": "company_Denver Health", "required": true}, {"type": "boolean", "name":
+  "company_Edison International", "required": true}, {"type": "boolean", "name": "company_Facebook
+  App", "required": true}, {"type": "boolean", "name": "company_FanDuel", "required":
+  true}, {"type": "boolean", "name": "company_Fannie Mae", "required": true}, {"type":
+  "boolean", "name": "company_FedEx Dataworks", "required": true}, {"type": "boolean",
+  "name": "company_Finance and Administration", "required": true}, {"type": "boolean",
+  "name": "company_Flex Employee Services", "required": true}, {"type": "boolean",
+  "name": "company_Freelancing", "required": true}, {"type": "boolean", "name": "company_Genentech",
+  "required": true}, {"type": "boolean", "name": "company_General Atomics and Affiliated
+  Companies", "required": true}, {"type": "boolean", "name": "company_Google", "required":
+  true}, {"type": "boolean", "name": "company_Guttmacher Institute", "required": true},
+  {"type": "boolean", "name": "company_Handshake", "required": true}, {"type": "boolean",
+  "name": "company_Hawaii State Judiciary", "required": true}, {"type": "boolean",
+  "name": "company_Indeed", "required": true}, {"type": "boolean", "name": "company_Infosys",
+  "required": true}, {"type": "boolean", "name": "company_JPMorganChase", "required":
+  true}, {"type": "boolean", "name": "company_January", "required": true}, {"type":
+  "boolean", "name": "company_Johnson & Johnson", "required": true}, {"type": "boolean",
+  "name": "company_Kimberly-Clark", "required": true}, {"type": "boolean", "name":
+  "company_Lyft", "required": true}, {"type": "boolean", "name": "company_MEDIDATA",
+  "required": true}, {"type": "boolean", "name": "company_Mayo Clinic", "required":
+  true}, {"type": "boolean", "name": "company_Medtronic", "required": true}, {"type":
+  "boolean", "name": "company_Memorial Sloan Kettering Cancer Center", "required":
+  true}, {"type": "boolean", "name": "company_Messenger", "required": true}, {"type":
+  "boolean", "name": "company_Meta", "required": true}, {"type": "boolean", "name":
+  "company_MetroStar", "required": true}, {"type": "boolean", "name": "company_Microsoft",
+  "required": true}, {"type": "boolean", "name": "company_Motion Recruitment", "required":
+  true}, {"type": "boolean", "name": "company_Motive", "required": true}, {"type":
+  "boolean", "name": "company_Motorola Solutions", "required": true}, {"type": "boolean",
+  "name": "company_NVIDIA", "required": true}, {"type": "boolean", "name": "company_Netflix",
+  "required": true}, {"type": "boolean", "name": "company_New York Life Insurance
+  Co", "required": true}, {"type": "boolean", "name": "company_PRICE WATERHOUSE COOPERS",
+  "required": true}, {"type": "boolean", "name": "company_Palo Alto Networks", "required":
+  true}, {"type": "boolean", "name": "company_Parsons", "required": true}, {"type":
+  "boolean", "name": "company_PayPal", "required": true}, {"type": "boolean", "name":
+  "company_PepsiCo", "required": true}, {"type": "boolean", "name": "company_Pfizer",
+  "required": true}, {"type": "boolean", "name": "company_Praxis Engineering", "required":
+  true}, {"type": "boolean", "name": "company_Progressive", "required": true}, {"type":
+  "boolean", "name": "company_Prudential", "required": true}, {"type": "boolean",
+  "name": "company_Publicis Groupe", "required": true}, {"type": "boolean", "name":
+  "company_Qualcomm", "required": true}, {"type": "boolean", "name": "company_Red
+  Hat, Inc.", "required": true}, {"type": "boolean", "name": "company_Riverside Research
+  Institute", "required": true}, {"type": "boolean", "name": "company_Rockefeller
+  University", "required": true}, {"type": "boolean", "name": "company_SAP", "required":
+  true}, {"type": "boolean", "name": "company_SalesPoint Pvt. Ltd.", "required": true},
+  {"type": "boolean", "name": "company_Salesforce", "required": true}, {"type": "boolean",
+  "name": "company_ServiceNow", "required": true}, {"type": "boolean", "name": "company_Sinclair
+  Community College", "required": true}, {"type": "boolean", "name": "company_Snowflake",
+  "required": true}, {"type": "boolean", "name": "company_Solventum", "required":
+  true}, {"type": "boolean", "name": "company_Southern California Edison", "required":
+  true}, {"type": "boolean", "name": "company_Splunk", "required": true}, {"type":
+  "boolean", "name": "company_Stratagem Group LLC", "required": true}, {"type": "boolean",
+  "name": "company_Sumitomo Mitsui Banking Corporation", "required": true}, {"type":
+  "boolean", "name": "company_Suncoast Credit Union", "required": true}, {"type":
+  "boolean", "name": "company_Syntelligent Analytic Solutions", "required": true},
+  {"type": "boolean", "name": "company_T-Mobile", "required": true}, {"type": "boolean",
+  "name": "company_T-Mobile USA, Inc.", "required": true}, {"type": "boolean", "name":
+  "company_The Cadmus Group, Inc.", "required": true}, {"type": "boolean", "name":
+  "company_The Hartford", "required": true}, {"type": "boolean", "name": "company_Thomas
+  Solutions Incorporated", "required": true}, {"type": "boolean", "name": "company_UCSF
+  Health", "required": true}, {"type": "boolean", "name": "company_University of California
+  San Francisco", "required": true}, {"type": "boolean", "name": "company_University
+  of Florida", "required": true}, {"type": "boolean", "name": "company_Verily", "required":
+  true}, {"type": "boolean", "name": "company_Verizon", "required": true}, {"type":
+  "boolean", "name": "company_Visa", "required": true}, {"type": "boolean", "name":
+  "company_Vizient, Inc.", "required": true}, {"type": "boolean", "name": "company_Wells
+  Fargo", "required": true}, {"type": "boolean", "name": "company_Western Governors
+  University", "required": true}, {"type": "boolean", "name": "company_Whatnot", "required":
+  true}, {"type": "boolean", "name": "company_Workday", "required": true}, {"type":
+  "boolean", "name": "company_Zoom", "required": true}, {"type": "boolean", "name":
+  "company_iManage", "required": true}, {"type": "boolean", "name": "company_paypal",
+  "required": true}, {"type": "boolean", "name": "location_Anacostia, DC", "required":
+  true}, {"type": "boolean", "name": "location_Annapolis Junction, MD", "required":
+  true}, {"type": "boolean", "name": "location_Arden Hills, MN", "required": true},
+  {"type": "boolean", "name": "location_Arlington, VA 22203", "required": true}, {"type":
+  "boolean", "name": "location_Atlanta, GA", "required": true}, {"type": "boolean",
+  "name": "location_Atlanta, GA 30319", "required": true}, {"type": "boolean", "name":
+  "location_Aurora, CO 80011", "required": true}, {"type": "boolean", "name": "location_Austin,
+  TX", "required": true}, {"type": "boolean", "name": "location_Austin, TX 78701",
+  "required": true}, {"type": "boolean", "name": "location_Basking Ridge, NJ", "required":
+  true}, {"type": "boolean", "name": "location_Beavercreek, OH 45431", "required":
+  true}, {"type": "boolean", "name": "location_Bellevue, WA", "required": true}, {"type":
+  "boolean", "name": "location_Bellevue, WA 98005", "required": true}, {"type": "boolean",
+  "name": "location_Bellevue, WA 98006", "required": true}, {"type": "boolean", "name":
+  "location_Boston, MA", "required": true}, {"type": "boolean", "name": "location_Boston,
+  MA 02210", "required": true}, {"type": "boolean", "name": "location_Bothell, WA",
+  "required": true}, {"type": "boolean", "name": "location_Boulder, CO", "required":
+  true}, {"type": "boolean", "name": "location_Burlingame, CA 94010", "required":
+  true}, {"type": "boolean", "name": "location_Cambridge, MA", "required": true},
+  {"type": "boolean", "name": "location_Chantilly, VA", "required": true}, {"type":
+  "boolean", "name": "location_Chantilly, VA 20151", "required": true}, {"type": "boolean",
+  "name": "location_Charlotte, NC", "required": true}, {"type": "boolean", "name":
+  "location_Charlottesville, VA", "required": true}, {"type": "boolean", "name": "location_Chicago,
+  IL", "required": true}, {"type": "boolean", "name": "location_Chicago, IL 60606",
+  "required": true}, {"type": "boolean", "name": "location_Columbus, OH", "required":
+  true}, {"type": "boolean", "name": "location_Cupertino, CA", "required": true},
+  {"type": "boolean", "name": "location_Dallas, TX", "required": true}, {"type": "boolean",
+  "name": "location_Dayton, OH 45402", "required": true}, {"type": "boolean", "name":
+  "location_Denver, CO 80203", "required": true}, {"type": "boolean", "name": "location_Ford
+  Island, HI", "required": true}, {"type": "boolean", "name": "location_Fort Bragg,
+  NC 28307", "required": true}, {"type": "boolean", "name": "location_Fort Worth,
+  TX 76102", "required": true}, {"type": "boolean", "name": "location_Foster City,
+  CA", "required": true}, {"type": "boolean", "name": "location_Foster City, CA 94404",
+  "required": true}, {"type": "boolean", "name": "location_Gainesville, FL 32611",
+  "required": true}, {"type": "boolean", "name": "location_Gaithersburg, MD 20878",
+  "required": true}, {"type": "boolean", "name": "location_Hartford, CT 06112", "required":
+  true}, {"type": "boolean", "name": "location_Honolulu, HI 96813", "required": true},
+  {"type": "boolean", "name": "location_Indianapolis, IN 46077", "required": true},
+  {"type": "boolean", "name": "location_Irvine, CA", "required": true}, {"type": "boolean",
+  "name": "location_Irving, NY", "required": true}, {"type": "boolean", "name": "location_Irving,
+  TX", "required": true}, {"type": "boolean", "name": "location_Irwindale, CA", "required":
+  true}, {"type": "boolean", "name": "location_Irwindale, CA 91702", "required": true},
+  {"type": "boolean", "name": "location_Iselin, NJ", "required": true}, {"type": "boolean",
+  "name": "location_Jacksonville, FL 32256", "required": true}, {"type": "boolean",
+  "name": "location_Jersey City, NJ 07310", "required": true}, {"type": "boolean",
+  "name": "location_Lafayette, LA", "required": true}, {"type": "boolean", "name":
+  "location_Lenexa, KS", "required": true}, {"type": "boolean", "name": "location_Lexington,
+  MA 02421", "required": true}, {"type": "boolean", "name": "location_Maplewood, MN
+  55119", "required": true}, {"type": "boolean", "name": "location_McLean, VA 22103",
+  "required": true}, {"type": "boolean", "name": "location_Memphis, TN 38125", "required":
+  true}, {"type": "boolean", "name": "location_Menlo Park, CA", "required": true},
+  {"type": "boolean", "name": "location_Menlo Park, CA 94025", "required": true},
+  {"type": "boolean", "name": "location_Milwaukee, WI 53214", "required": true}, {"type":
+  "boolean", "name": "location_Minnesota", "required": true}, {"type": "boolean",
+  "name": "location_Mountain View, CA", "required": true}, {"type": "boolean", "name":
+  "location_Mountain View, CA 94043", "required": true}, {"type": "boolean", "name":
+  "location_Nashville, TN 37203", "required": true}, {"type": "boolean", "name": "location_New
+  York, NY", "required": true}, {"type": "boolean", "name": "location_New York, NY
+  10003", "required": true}, {"type": "boolean", "name": "location_New York, NY 10017",
+  "required": true}, {"type": "boolean", "name": "location_New York, NY 10018", "required":
+  true}, {"type": "boolean", "name": "location_New York, NY 10038", "required": true},
+  {"type": "boolean", "name": "location_New York, NY 10065", "required": true}, {"type":
+  "boolean", "name": "location_New York, NY 10172", "required": true}, {"type": "boolean",
+  "name": "location_Newark, NJ 07102", "required": true}, {"type": "boolean", "name":
+  "location_Offutt AFB, NE", "required": true}, {"type": "boolean", "name": "location_Overland
+  Park, KS 66251", "required": true}, {"type": "boolean", "name": "location_Plano,
+  TX 75024", "required": true}, {"type": "boolean", "name": "location_Princeton, NJ",
+  "required": true}, {"type": "boolean", "name": "location_Redmond, WA", "required":
+  true}, {"type": "boolean", "name": "location_Redmond, WA 98052", "required": true},
+  {"type": "boolean", "name": "location_Remote", "required": true}, {"type": "boolean",
+  "name": "location_Renton, WA", "required": true}, {"type": "boolean", "name": "location_Reston,
+  VA", "required": true}, {"type": "boolean", "name": "location_Richardson, TX", "required":
+  true}, {"type": "boolean", "name": "location_Richardson, TX 75081", "required":
+  true}, {"type": "boolean", "name": "location_Riverside, CA 92518", "required": true},
+  {"type": "boolean", "name": "location_Rochester, MN 55901", "required": true}, {"type":
+  "boolean", "name": "location_Roseville, MN", "required": true}, {"type": "boolean",
+  "name": "location_Roswell, GA", "required": true}, {"type": "boolean", "name": "location_Saint
+  Louis Park, MN 55416", "required": true}, {"type": "boolean", "name": "location_Salt
+  Lake City, UT", "required": true}, {"type": "boolean", "name": "location_San Bruno,
+  CA", "required": true}, {"type": "boolean", "name": "location_San Diego, CA", "required":
+  true}, {"type": "boolean", "name": "location_San Francisco, CA", "required": true},
+  {"type": "boolean", "name": "location_San Francisco, CA 94102", "required": true},
+  {"type": "boolean", "name": "location_San Francisco, CA 94104", "required": true},
+  {"type": "boolean", "name": "location_San Francisco, CA 94105", "required": true},
+  {"type": "boolean", "name": "location_San Francisco, CA 94110", "required": true},
+  {"type": "boolean", "name": "location_San Francisco, CA 94143", "required": true},
+  {"type": "boolean", "name": "location_San Jose, CA", "required": true}, {"type":
+  "boolean", "name": "location_Santa Clara, CA", "required": true}, {"type": "boolean",
+  "name": "location_Santa Clara, CA 95050", "required": true}, {"type": "boolean",
+  "name": "location_Santa Clara, CA 95054", "required": true}, {"type": "boolean",
+  "name": "location_Scottsdale, AZ 85255", "required": true}, {"type": "boolean",
+  "name": "location_Seattle, WA", "required": true}, {"type": "boolean", "name": "location_Seattle,
+  WA 98105", "required": true}, {"type": "boolean", "name": "location_Seattle, WA
+  98107", "required": true}, {"type": "boolean", "name": "location_Spring House, PA",
+  "required": true}, {"type": "boolean", "name": "location_Springfield, VA 22150",
+  "required": true}, {"type": "boolean", "name": "location_Sunnyvale, CA", "required":
+  true}, {"type": "boolean", "name": "location_Sunnyvale, CA 94085", "required": true},
+  {"type": "boolean", "name": "location_Sunnyvale, CA 94089", "required": true}, {"type":
+  "boolean", "name": "location_Tampa, FL 33601", "required": true}, {"type": "boolean",
+  "name": "location_Tampa, FL 33610", "required": true}, {"type": "boolean", "name":
+  "location_Tempe, AZ", "required": true}, {"type": "boolean", "name": "location_United
+  States", "required": true}, {"type": "boolean", "name": "location_Virginia", "required":
+  true}, {"type": "boolean", "name": "location_Washington State", "required": true},
+  {"type": "boolean", "name": "location_Washington, DC", "required": true}, {"type":
+  "boolean", "name": "location_Washington, DC 20006", "required": true}, {"type":
+  "boolean", "name": "location_Washington, DC 20022", "required": true}, {"type":
+  "boolean", "name": "location_Washington, NC", "required": true}, {"type": "boolean",
+  "name": "location_Wisconsin", "required": true}, {"type": "boolean", "name": "location_Woodbridge,
+  VA", "required": true}, {"type": "boolean", "name": "positionName_AI & Data Platform
+  Program Lead - SVP", "required": true}, {"type": "boolean", "name": "positionName_AI
+  Architect - Information Technology", "required": true}, {"type": "boolean", "name":
+  "positionName_AI Community Engineer", "required": true}, {"type": "boolean", "name":
+  "positionName_AI Developer Efficiency Product Manager", "required": true}, {"type":
+  "boolean", "name": "positionName_AI Development Expert", "required": true}, {"type":
+  "boolean", "name": "positionName_AI Governance Lead", "required": true}, {"type":
+  "boolean", "name": "positionName_AI Infrastructure Engineer", "required": true},
+  {"type": "boolean", "name": "positionName_AI ML Engineer (Senior)", "required":
+  true}, {"type": "boolean", "name": "positionName_AI Platform Engineer (Remote)",
+  "required": true}, {"type": "boolean", "name": "positionName_AI Researcher, Handshake
+  AI", "required": true}, {"type": "boolean", "name": "positionName_AI Scientist -
+  Agentic Verticals", "required": true}, {"type": "boolean", "name": "positionName_AI
+  Solutions Architect", "required": true}, {"type": "boolean", "name": "positionName_AI
+  Solutions Architect, Data Solutions & Initiatives", "required": true}, {"type":
+  "boolean", "name": "positionName_AI Strategy Manager", "required": true}, {"type":
+  "boolean", "name": "positionName_AI Tutor, Economics Specialist (contract), Handshake
+  AI", "required": true}, {"type": "boolean", "name": "positionName_AI Tutor, Environmental
+  Science Specialist (Contract), Handshake AI", "required": true}, {"type": "boolean",
+  "name": "positionName_AI Tutor, Materials Science Specialist (Contract), Handshake
+  AI", "required": true}, {"type": "boolean", "name": "positionName_AI Value Methodology
+  Lead", "required": true}, {"type": "boolean", "name": "positionName_AI and ML Engineer",
+  "required": true}, {"type": "boolean", "name": "positionName_AI/ML Development Engineer,
+  RD&E", "required": true}, {"type": "boolean", "name": "positionName_AI/ML Engineer",
+  "required": true}, {"type": "boolean", "name": "positionName_AI/ML Engineer for
+  Human Factors", "required": true}, {"type": "boolean", "name": "positionName_AI/ML
+  Manager - Automation and Orchestration", "required": true}, {"type": "boolean",
+  "name": "positionName_Ai Engineer", "required": true}, {"type": "boolean", "name":
+  "positionName_Analyst, Talent Analytics (Machine Learning)", "required": true},
+  {"type": "boolean", "name": "positionName_Applied AI/ML, Senior Associate - Gen
+  AI & LLM", "required": true}, {"type": "boolean", "name": "positionName_Applied
+  Machine Learning Research Engineer, Siri", "required": true}, {"type": "boolean",
+  "name": "positionName_Applied Scientist II - M365 Copilot", "required": true}, {"type":
+  "boolean", "name": "positionName_Arity - Data Scientist - Arity", "required": true},
+  {"type": "boolean", "name": "positionName_Artificial Intelligence Solutions Consultant
+  - Conversational Architect", "required": true}, {"type": "boolean", "name": "positionName_Artificial
+  Intelligence Specialist - Multimedia - Fort Liberty, North Carolina", "required":
+  true}, {"type": "boolean", "name": "positionName_Associate Director, Analytical
+  AI Forecasting and Predictive Solutions", "required": true}, {"type": "boolean",
+  "name": "positionName_Audio Software Engineer, Applied Scientist", "required": true},
+  {"type": "boolean", "name": "positionName_Azure AI Security Senior Consultant",
+  "required": true}, {"type": "boolean", "name": "positionName_Business and Marketing
+  Data Scientist II", "required": true}, {"type": "boolean", "name": "positionName_Data
+  & Marketplace Integrity", "required": true}, {"type": "boolean", "name": "positionName_Data
+  Analyst Senior or Lead", "required": true}, {"type": "boolean", "name": "positionName_Data
+  Analytics Lead Analyst - C13 - IRVING", "required": true}, {"type": "boolean", "name":
+  "positionName_Data Center Mechanical Engineer - Sunnyvale, Austin or Kirkland",
+  "required": true}, {"type": "boolean", "name": "positionName_Data Engineer, TS/SCI
+  FSP", "required": true}, {"type": "boolean", "name": "positionName_Data Engineering
+  Manager, Analytics", "required": true}, {"type": "boolean", "name": "positionName_Data
+  Science Analyst - Python and Machine Learning", "required": true}, {"type": "boolean",
+  "name": "positionName_Data Science Manager, Demand Planning and Forecasting", "required":
+  true}, {"type": "boolean", "name": "positionName_Data Science Manager, Monetization",
+  "required": true}, {"type": "boolean", "name": "positionName_Data Science Senior
+  Specialist", "required": true}, {"type": "boolean", "name": "positionName_Data Scientist",
+  "required": true}, {"type": "boolean", "name": "positionName_Data Scientist (Technical
+  Leadership)", "required": true}, {"type": "boolean", "name": "positionName_Data
+  Scientist I - Curriculum Analytics", "required": true}, {"type": "boolean", "name":
+  "positionName_Data Scientist II", "required": true}, {"type": "boolean", "name":
+  "positionName_Data Scientist II - Quality & Patient Safety Initiative (QPSi)", "required":
+  true}, {"type": "boolean", "name": "positionName_Data Scientist \u2013 AI/ML Recommendations
+  & Personalization", "required": true}, {"type": "boolean", "name": "positionName_Data
+  Scientist, Agentic AI", "required": true}, {"type": "boolean", "name": "positionName_Data
+  Scientist, Energy Analytics, Google Cloud", "required": true}, {"type": "boolean",
+  "name": "positionName_Data Scientist, Federal Team", "required": true}, {"type":
+  "boolean", "name": "positionName_Data Scientist, Product, Play Data Science and
+  Analytics", "required": true}, {"type": "boolean", "name": "positionName_Data Scientist,
+  Senior", "required": true}, {"type": "boolean", "name": "positionName_Data Scientist,
+  Senior Active TS/SCI with Poly REQUIRED", "required": true}, {"type": "boolean",
+  "name": "positionName_Data Scientist-Sr Consultant II", "required": true}, {"type":
+  "boolean", "name": "positionName_Data Visualization Subject Matter Expert (SME)",
+  "required": true}, {"type": "boolean", "name": "positionName_Decision Scientist",
+  "required": true}, {"type": "boolean", "name": "positionName_Delivery Lead, Handshake
+  AI", "required": true}, {"type": "boolean", "name": "positionName_Design Strategist
+  III - Artificial Intelligence", "required": true}, {"type": "boolean", "name": "positionName_Director,
+  Data Science Platform | Data Science Platform", "required": true}, {"type": "boolean",
+  "name": "positionName_Director, Data Science, Product Management", "required": true},
+  {"type": "boolean", "name": "positionName_ENTERPRISE DATA SCIENTIST - 68920", "required":
+  true}, {"type": "boolean", "name": "positionName_Enterprise Data Scientist", "required":
+  true}, {"type": "boolean", "name": "positionName_Evidence Lead (AI models)", "required":
+  true}, {"type": "boolean", "name": "positionName_Executive Director, Head of Engineering
+  - Data & AI", "required": true}, {"type": "boolean", "name": "positionName_Experienced
+  Quality Systems Specialist (Statistical Analysis & Application)", "required": true},
+  {"type": "boolean", "name": "positionName_FinTech Product Analyst - AI Trainer",
+  "required": true}, {"type": "boolean", "name": "positionName_Full Stack AI Engineer
+  - Senior Consultant II", "required": true}, {"type": "boolean", "name": "positionName_Gen
+  AI Engineering Manager", "required": true}, {"type": "boolean", "name": "positionName_Gen
+  AI Lead Engineer - SVP", "required": true}, {"type": "boolean", "name": "positionName_GenAI
+  Project Manager, Product Data Operations", "required": true}, {"type": "boolean",
+  "name": "positionName_GenAI Technology Lead - (Hybrid)", "required": true}, {"type":
+  "boolean", "name": "positionName_Growth Operations Lead, Handshake AI", "required":
+  true}, {"type": "boolean", "name": "positionName_Head of AI Solutions", "required":
+  true}, {"type": "boolean", "name": "positionName_Human Data Manager, Handshake AI",
+  "required": true}, {"type": "boolean", "name": "positionName_Image Processing and
+  Machine Learning Engineer (PhD)", "required": true}, {"type": "boolean", "name":
+  "positionName_Internal Audit - Data Science Senior Associate", "required": true},
+  {"type": "boolean", "name": "positionName_Lead AI Engineer - Agent Engineering Team",
+  "required": true}, {"type": "boolean", "name": "positionName_Lead AI-driven IT Service
+  Management (ITSM) Engineer", "required": true}, {"type": "boolean", "name": "positionName_Lead
+  Data Scientist", "required": true}, {"type": "boolean", "name": "positionName_Lead
+  Data Scientist - Finance Technology", "required": true}, {"type": "boolean", "name":
+  "positionName_Lead Data Scientist, Research, Multimodal Search", "required": true},
+  {"type": "boolean", "name": "positionName_Lead, Machine Learning Engineer", "required":
+  true}, {"type": "boolean", "name": "positionName_ML Engineer", "required": true},
+  {"type": "boolean", "name": "positionName_ML Engineering - ML Ops", "required":
+  true}, {"type": "boolean", "name": "positionName_ML/AI Operations Architect \u2013
+  Evinova", "required": true}, {"type": "boolean", "name": "positionName_ML/AI Operations
+  Architect \u2013 Evinova Gaithersburg, Maryland", "required": true}, {"type": "boolean",
+  "name": "positionName_Machine Learning / Computer Vision Engineer - Generative AI",
+  "required": true}, {"type": "boolean", "name": "positionName_Machine Learning Compiler
+  Architect", "required": true}, {"type": "boolean", "name": "positionName_Machine
+  Learning Engineer", "required": true}, {"type": "boolean", "name": "positionName_Machine
+  Learning Engineer - AI Trainer", "required": true}, {"type": "boolean", "name":
+  "positionName_Machine Learning Engineer - Vice President", "required": true}, {"type":
+  "boolean", "name": "positionName_Machine Learning Engineer, Junior", "required":
+  true}, {"type": "boolean", "name": "positionName_Machine Learning Engineer, Senior
+  Active TS/SCI with Poly REQUIRED", "required": true}, {"type": "boolean", "name":
+  "positionName_Machine Learning Engineer, Siri Conversation Intelligence", "required":
+  true}, {"type": "boolean", "name": "positionName_Machine Learning Scientist (L5)
+  - Ads", "required": true}, {"type": "boolean", "name": "positionName_Machine Learning
+  Scientist III", "required": true}, {"type": "boolean", "name": "positionName_Machine
+  Learning Software Engineering Manager", "required": true}, {"type": "boolean", "name":
+  "positionName_Managed Services - Applied AI Operations - Senior Associate", "required":
+  true}, {"type": "boolean", "name": "positionName_Manager - AI Engineering", "required":
+  true}, {"type": "boolean", "name": "positionName_Manager, AI & Data Science - Cognitive
+  AI", "required": true}, {"type": "boolean", "name": "positionName_Manager, Data
+  Science - System Intelligence and Machine Learning, ISE", "required": true}, {"type":
+  "boolean", "name": "positionName_Natural Language (NL) Data Scientist", "required":
+  true}, {"type": "boolean", "name": "positionName_OR Data Scientist II", "required":
+  true}, {"type": "boolean", "name": "positionName_PRINCIPAL DATA SCIENTISTS, CUSTOMER
+  ANALYTICS \u2013 ECOSYSTEM", "required": true}, {"type": "boolean", "name": "positionName_Principal
+  AI Scientist (Deep Learning Focus)", "required": true}, {"type": "boolean", "name":
+  "positionName_Principal Data Science Analyst - Remote", "required": true}, {"type":
+  "boolean", "name": "positionName_Principal Data Scientist", "required": true}, {"type":
+  "boolean", "name": "positionName_Principal Engineering Lead \u2013 Gaming AI", "required":
+  true}, {"type": "boolean", "name": "positionName_Principal Portfolio Lead, Statistical
+  Programming - Oncology", "required": true}, {"type": "boolean", "name": "positionName_Principal
+  Threat Researcher (Data Platform)", "required": true}, {"type": "boolean", "name":
+  "positionName_Principal, Microsoft AI Monetization Strategy", "required": true},
+  {"type": "boolean", "name": "positionName_Product Analyst - GenAI", "required":
+  true}, {"type": "boolean", "name": "positionName_Prompt Engineer, Handshake AI",
+  "required": true}, {"type": "boolean", "name": "positionName_Reports Engineer/Fledgling
+  Data Scientist \u2013 Poly Clearance Required!", "required": true}, {"type": "boolean",
+  "name": "positionName_Research Data Scientist", "required": true}, {"type": "boolean",
+  "name": "positionName_Research Engineer, Handshake AI", "required": true}, {"type":
+  "boolean", "name": "positionName_Research Engineer, Speech & Language - Generative
+  AI", "required": true}, {"type": "boolean", "name": "positionName_Research Scientist,
+  Machine Learning (PhD)", "required": true}, {"type": "boolean", "name": "positionName_Research
+  Statistician I", "required": true}, {"type": "boolean", "name": "positionName_Research
+  Statistician II", "required": true}, {"type": "boolean", "name": "positionName_Senior
+  AI Application Engineer", "required": true}, {"type": "boolean", "name": "positionName_Senior
+  AI Engineer", "required": true}, {"type": "boolean", "name": "positionName_Senior
+  AI Engineer - AI Incubation", "required": true}, {"type": "boolean", "name": "positionName_Senior
+  AI Engineer - Data Scientist", "required": true}, {"type": "boolean", "name": "positionName_Senior
+  AI Software Engineer", "required": true}, {"type": "boolean", "name": "positionName_Senior
+  AI Workflow Engineer", "required": true}, {"type": "boolean", "name": "positionName_Senior
+  AI/ML Scientist", "required": true}, {"type": "boolean", "name": "positionName_Senior
+  Analyst - Data Science", "required": true}, {"type": "boolean", "name": "positionName_Senior
+  Applied Scientist", "required": true}, {"type": "boolean", "name": "positionName_Senior
+  Applied Scientist, AI (FULLY REMOTE-USA)", "required": true}, {"type": "boolean",
+  "name": "positionName_Senior Associate, Analytics & AI Analyst", "required": true},
+  {"type": "boolean", "name": "positionName_Senior Battery Data Scientist", "required":
+  true}, {"type": "boolean", "name": "positionName_Senior Business/Data Analyst",
+  "required": true}, {"type": "boolean", "name": "positionName_Senior Commercial Data
+  Analyst", "required": true}, {"type": "boolean", "name": "positionName_Senior Compiler
+  Verification Engineer - Deep Learning", "required": true}, {"type": "boolean", "name":
+  "positionName_Senior Customer Data Analyst", "required": true}, {"type": "boolean",
+  "name": "positionName_Senior Data & AI Engineer", "required": true}, {"type": "boolean",
+  "name": "positionName_Senior Data Analyst", "required": true}, {"type": "boolean",
+  "name": "positionName_Senior Data Processing Platform Engineer", "required": true},
+  {"type": "boolean", "name": "positionName_Senior Data Scientist", "required": true},
+  {"type": "boolean", "name": "positionName_Senior Data Scientist - Finance", "required":
+  true}, {"type": "boolean", "name": "positionName_Senior Data Scientist, AI Agent",
+  "required": true}, {"type": "boolean", "name": "positionName_Senior Data Scientist,
+  Algorithms - Primetime Pricing", "required": true}, {"type": "boolean", "name":
+  "positionName_Senior Data Scientist, Research, YouTube Search", "required": true},
+  {"type": "boolean", "name": "positionName_Senior Director of Product, Consumer AI
+  PayPal", "required": true}, {"type": "boolean", "name": "positionName_Senior Fraud
+  Data Analyst", "required": true}, {"type": "boolean", "name": "positionName_Senior
+  Integration Engineer - AI and Hardware Accelerators", "required": true}, {"type":
+  "boolean", "name": "positionName_Senior ML Data Program Manager", "required": true},
+  {"type": "boolean", "name": "positionName_Senior Machine Learning Engineer", "required":
+  true}, {"type": "boolean", "name": "positionName_Senior Machine Learning Engineer,
+  Siri Attention and Invocation", "required": true}, {"type": "boolean", "name": "positionName_Senior
+  Manager, Data Science & Analytics", "required": true}, {"type": "boolean", "name":
+  "positionName_Senior Quantitative Analytics Specialist - R&D GenAI, Agentic AI and
+  ML", "required": true}, {"type": "boolean", "name": "positionName_Senior Software
+  Engineer - AI Systems", "required": true}, {"type": "boolean", "name": "positionName_Senior
+  Software Engineer, AI/ML, Google Cloud Compute", "required": true}, {"type": "boolean",
+  "name": "positionName_Senior Staff Machine Learning Engineer, Communication & Connectivity",
+  "required": true}, {"type": "boolean", "name": "positionName_Senior Statistician
+  - NV", "required": true}, {"type": "boolean", "name": "positionName_Senior System
+  Software Engineer, AI Solutions Engineering", "required": true}, {"type": "boolean",
+  "name": "positionName_Software Developer, AI Networking", "required": true}, {"type":
+  "boolean", "name": "positionName_Software Engineer (Data), Ai & Data Platforms",
+  "required": true}, {"type": "boolean", "name": "positionName_Software Engineer (Technical
+  Leadership) - Machine Learning", "required": true}, {"type": "boolean", "name":
+  "positionName_Software Engineer - ML Data", "required": true}, {"type": "boolean",
+  "name": "positionName_Software Engineer, Machine Learning", "required": true}, {"type":
+  "boolean", "name": "positionName_Software Engineer, Machine Learning \u00e2\u20ac\u201c
+  Engineering Systems and AI Research", "required": true}, {"type": "boolean", "name":
+  "positionName_Software Engineering Manager, Machine Learning", "required": true},
+  {"type": "boolean", "name": "positionName_Sr Data Scientist", "required": true},
+  {"type": "boolean", "name": "positionName_Sr. Data Analyst", "required": true},
+  {"type": "boolean", "name": "positionName_Sr. Data Analyst (SQL/Tableau/Databricks)",
+  "required": true}, {"type": "boolean", "name": "positionName_Sr. Data Scientist",
+  "required": true}, {"type": "boolean", "name": "positionName_Sr. Data Scientist
+  II (5945)", "required": true}, {"type": "boolean", "name": "positionName_Sr. Data
+  Scientist \u2013 AI/ML & LLM Specialist", "required": true}, {"type": "boolean",
+  "name": "positionName_Staff AI/ML Engineering Manager (TS/SCI) {S}", "required":
+  true}, {"type": "boolean", "name": "positionName_Staff Data Scientist, Research,
+  Search Platforms", "required": true}, {"type": "boolean", "name": "positionName_Staff
+  Machine Learning Engineer", "required": true}, {"type": "boolean", "name": "positionName_Staff
+  Software Engineer, BigQuery, Generative AI", "required": true}, {"type": "boolean",
+  "name": "positionName_Strategic Projects Lead, Handshake AI", "required": true},
+  {"type": "boolean", "name": "positionName_Technical Lead- AI-based Autonomous Driving
+  Systems", "required": true}, {"type": "boolean", "name": "positionName_Threat Analyst,
+  Machine Learning (Remote, East/Central)", "required": true}, {"type": "boolean",
+  "name": "positionName_VP - Regulatory Reporting Ld Analyst / Data Scientist - TAMPA/CHARLOTTE
+  (Hybrid)", "required": true}, {"type": "boolean", "name": "positionName_Vice President,
+  Data Science", "required": true}, {"type": "boolean", "name": "positionName_Workforce
+  Optimization Data Science & Analytics Lead - Vice President", "required": true},
+  {"type": "boolean", "name": "jobType/0_Contract", "required": true}, {"type": "boolean",
+  "name": "jobType/0_Full-time", "required": true}, {"type": "boolean", "name": "jobType/1_Contract",
+  "required": true}]}'
+source: '{"tags": {"mlflow.user": "ADVAN SERIES", "mlflow.source.name": "c:\\Users\\ADVAN
+  SERIES\\Downloads\\Membangun_model\\modelling.py", "mlflow.source.type": "LOCAL"}}'
+source_type: code
