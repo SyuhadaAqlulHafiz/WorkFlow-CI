@@ -1,0 +1,8 @@
+artifact_location: file:///home/runner/work/WorkFlow-CI/WorkFlow-CI/mlruns/578207464598923748
+creation_time: 1780230535505
+experiment_id: '578207464598923748'
+last_update_time: 1780230535505
+lifecycle_stage: active
+name: Job_Salary_Classification_Local
+trace_location: null
+workspace: default
