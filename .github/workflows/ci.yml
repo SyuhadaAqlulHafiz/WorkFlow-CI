@@ -141,7 +141,7 @@ jobs:
           mlflow models build-docker \
             --model-uri "$MODEL_URI" \
             --name salary-prediction-model \
-            --python-version 3.12
+            --env-manager conda
     
       - name: Login Docker Hub
         uses: docker/login-action@v3
