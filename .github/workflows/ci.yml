@@ -135,8 +135,6 @@ jobs:
     
       - name: Build Docker Model
         run: |
-           name: Build Docker Model
-        run: |
           mlflow models build-docker --model-uri "runs:/$RUN_ID/model" --name "salary-prediction-model"
     
       - name: Login Docker Hub
