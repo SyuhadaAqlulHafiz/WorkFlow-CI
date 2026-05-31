@@ -45,6 +45,7 @@ jobs:
       # Menghapus 'conda activate' manual karena mlflow run otomatis mengisolasi env berdasarkan conda.yaml
       - name: Run MLflow Project
         working-directory: MLProject
+        shell: bash -l {0}
         run: |
           mlflow run . --param-list data_path="JobDataset_preprocessing/job_dataset_preprocessed.csv"
 
