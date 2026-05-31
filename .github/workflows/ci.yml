@@ -135,15 +135,9 @@ jobs:
     
       - name: Build Docker Model
         run: |
-          MODEL_PATH="mlruns/$EXPERIMENT_ID/$RUN_ID/artifacts/model"
-    
-          echo "MODEL_PATH=$MODEL_PATH"
-    
-          ls -R "$MODEL_PATH"
-    
-          mlflow models build-docker \
-            --model-uri "$MODEL_PATH" \
-            --name salary-prediction-model
+           name: Build Docker Model
+        run: |
+          mlflow models build-docker --model-uri "runs:/$RUN_ID/model" --name "salary-prediction-model"
     
       - name: Login Docker Hub
         uses: docker/login-action@v3
