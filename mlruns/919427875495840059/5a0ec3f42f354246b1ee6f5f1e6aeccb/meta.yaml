@@ -1,0 +1,15 @@
+artifact_uri: file:///home/runner/work/WorkFlow-CI/WorkFlow-CI/mlruns/919427875495840059/5a0ec3f42f354246b1ee6f5f1e6aeccb/artifacts
+end_time: 1780233026306
+entry_point_name: ''
+experiment_id: '919427875495840059'
+lifecycle_stage: active
+run_id: 5a0ec3f42f354246b1ee6f5f1e6aeccb
+run_name: hilarious-gnat-945
+run_uuid: 5a0ec3f42f354246b1ee6f5f1e6aeccb
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1780233017171
+status: 3
+tags: []
+user_id: runner
