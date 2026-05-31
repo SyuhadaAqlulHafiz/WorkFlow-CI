@@ -47,7 +47,7 @@ jobs:
         working-directory: MLProject
         shell: bash -l {0}
         run: |
-          mlflow run . --no-conda --param-list data_path="JobDataset_preprocessing/job_dataset_preprocessed.csv"
+          mlflow run . --env-manager local --param-list data_path="JobDataset_preprocessing/job_dataset_preprocessed.csv"
 
       # 6. Get latest MLflow run_id
       - name: Get latest MLflow run_id
