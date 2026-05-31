@@ -1,6 +1,6 @@
-digest: 7e8917a2
+digest: 57b73b2b
 name: dataset
-profile: '{"num_rows": 176, "num_elements": 74448}'
+profile: '{"num_rows": 44, "num_elements": 18612}'
 schema: '{"mlflow_colspec": [{"type": "double", "name": "rating", "required": true},
   {"type": "double", "name": "desc_len", "required": true}, {"type": "double", "name":
   "posname_len", "required": true}, {"type": "boolean", "name": "company_A Place For
@@ -432,5 +432,5 @@ schema: '{"mlflow_colspec": [{"type": "double", "name": "rating", "required": tr
   "name": "jobType/0_Full-time", "required": true}, {"type": "boolean", "name": "jobType/1_Contract",
   "required": true}]}'
 source: '{"tags": {"mlflow.user": "runner", "mlflow.source.name": "modelling.py",
-  "mlflow.source.type": "LOCAL", "mlflow.source.git.commit": "6d27c8ae41b98a2e62a8d7ab36266976b80ff888"}}'
+  "mlflow.source.type": "LOCAL", "mlflow.source.git.commit": "d2d9b45c5585a6fb2b229fe26c0d27333474c12e"}}'
 source_type: code
