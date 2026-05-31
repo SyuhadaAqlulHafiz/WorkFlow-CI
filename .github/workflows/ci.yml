@@ -135,7 +135,13 @@ jobs:
     
       - name: Build Docker Model
         run: |
-          mlflow models build-docker --model-uri "runs:/$RUN_ID/model" --name "salary-prediction-model"
+          MODEL_URI="file://${{ github.workspace }}/mlruns/$EXPERIMENT_ID/$RUN_ID/artifacts/model"
+          echo "MODEL_URI=$MODEL_URI"
+
+          mlflow models build-docker \
+            --model-uri "$MODEL_URI" \
+            --name salary-prediction-model \
+            --python-version 3.12
     
       - name: Login Docker Hub
         uses: docker/login-action@v3
